@@ -52,7 +52,7 @@ public class StudentRestController {
 			@PathVariable Integer id)
 	{
 		service.deleteStudent(id);
-		String body = "Student deleted: "+id;
+		String body = "Student deleted successfully: "+id;
 		return ResponseEntity.ok(body);
 	}
 	
